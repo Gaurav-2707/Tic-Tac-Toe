@@ -1,0 +1,142 @@
+body {
+    text-align: center;
+}
+
+* {
+    font-family: 'inconsolata';
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 300px;
+}
+
+.game-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.cell:hover {
+    background-color: #eee;
+}
+
+.game-info {
+    margin-top: 15%;
+}
+
+#game-status {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.game-info #reset-button {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+    transition: 0.15s;
+    box-shadow: 0px 0px 2px black;
+}
+
+#reset-button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.banner.theme {
+    background-color: black;
+}
+
+.win-count {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.banner.theme p {
+    color: white;
+}
+
+.banner.theme .cell {
+    color: white;
+}
+
+.banner.theme .cell:hover {
+    background-color: rgb(27, 27, 27);
+}
+
+.change {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: black;
+    transition: 0.15s;
+    box-shadow: 0px 0px 2px black;
+    color: white;
+}
+
+.change:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.banner.theme .change {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 2px white;
+    border-color: white;
+}
+
+.banner.theme .change:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.banner.theme #reset-button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.banner.theme #reset-button {
+    background-color: black;
+    color: white;
+    border-color: white;
+    box-shadow: 0px 0px 2px white;
+}
+
+.banner.theme h1 {
+    color: white;
+}
